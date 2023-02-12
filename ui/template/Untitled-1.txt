@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+  <html>
+  <body>
+    <h2>Student Transcript</h2>
+<h3>Semester Two</h3>
+    <table border="1">
+      <tr bgcolor="#9acd32">
+        <th>Name of course</th>
+        <th>Name of instructor</th>
+        <th>GradePoint</th>
+<th>Grade</th>
+        <th>Course code</th>
+      </tr>
+      <xsl:for-each select="semester/course1">
+        <tr>
+            <td><xsl:value-of select="name"/></td>
+            <td><xsl:value-of select="instructor"/></td>
+            <td><xsl:value-of select="gradepoint"/></td>
+<td><xsl:value-of select="grade"/></td>
+            <td><xsl:value-of select="code"/></td>
+          </tr>
+      </xsl:for-each>
+    </table>
+</div>
+
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>

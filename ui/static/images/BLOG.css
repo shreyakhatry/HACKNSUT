@@ -1,0 +1,11 @@
+.blog-page{
+    width: 100%;
+    padding: 100px 100px;
+    display: inline-block;
+    background-color: #bc4788;
+}
+.blog-heading{
+    text-align: center;
+    font-weight: 7000;
+
+}

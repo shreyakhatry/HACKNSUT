@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("#experience").onsubmit = function(){
+                let name = document.querySelector("#exp_name").value;
+                let exp = document.querySelector("#exp").value;
+                let div = document.createElement("div");
+                div.innerHTML = `<h1>${name}</h1>
+                <p>${exp}</p>;`
+                document.querySelector("#user_experiences").append(div);
+                return false;
+            }
+        })
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="w3.css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <!---------------------------css stylesheet------------------------------->
+  <link rel="stylesheet" href="bootstrap-dist/css/style.css" />
+  <script
+      src="https://kit.fontawesome.com/61024fa0a4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!------------------jquery/js bootstrap cdn---------------------->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/custom.css" />
+    <!---FontAwesome-->
+    <script src="https://use.fontawesome.com/2445c4adc5.js"></script>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+      rel="stylesheet"
+    />
+    <title>BLOG PAGE</title>
+</head>
+<body style="background-color: rgb(202, 191, 191);">
+    <section id="testimonials" class="my-1" style="background-color: rgba(#698269,#698269,#698269,30%);">
+        <div class="container text-center">
+          <!-- <h1 class="display-6 text-center font-weight-bold mt-5">Code your dream job with us</h1> -->
+          <h1 class="display-6 text-muted mt-5">What do our students say?</h1>
+          <div class="row" >
+            <div class="col-md-4 mb-md-0 mb-4" >
+              <div class="card-testimonials" >
+                <div class="card-body"  style="background-color: #4E6C50;" >
+                  <h5 class="card-title bold6">
+                    <strong>Navpreet Kaur</strong>
+                  </h5>
+                  <div
+                    class="row px-3 justify-content-center align-items-center"
+                  >
+                    <p class="card-text mb-0">
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                    </p>
+                  </div>
+                  <p class="mt-2">
+                    Tech For All is a place of wholesome preparation for your
+                    interviews. From getting an opportunity to give mock
+                    interviews to having a personal review of your resume, you
+                    get every insight of interview preparation. It is a
+                    community where people share opportunities and help each
+                    other go.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4" >
+              <div class="card-testimonials">
+                <div class="card-body"  style="background-color: #4E6C50;" >
+                  <h5 class="card-title bold6">
+                    <strong>Akanksha Tanwar</strong>
+                  </h5>
+                  <div
+                    class="row px-3 justify-content-center align-items-center"
+                  >
+                    <p class="card-text mb-0">
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                    </p>
+                  </div>
+                  <p class="mt-2">
+                    If I had to best describe Tech For All, I would say, I am a
+                    part of this small but thriving community of extremely smart
+                    women are pushing our boundaries to become better at what
+                    we do. The idea is to throw away any inhibitions and doubts
+                    one has about herself, and look beyond what we've been told
+                    always by the society. I am very
+                    grateful to be a part of this program.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-testimonials">
+                <div class="card-body"  style="background-color: #4E6C50;" >
+                  <h5 class="card-title bold6">
+                    <strong>Prachi Singhal</strong>
+                  </h5>
+                  <div
+                    class="row px-3 justify-content-center align-items-center"
+                  >
+                    <p class="card-text mb-0">
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="../static/images/star_filled.svg" alt="" />
+                    </p>
+                  </div>
+                  <p class="mt-2">
+                    Getting the right guidance at the right time is really
+                    important. Tech For All not only guided me but also took mock
+                    interviews which boosted my confidence and gave me a chance
+                    to analyse and improve and they always helped me in staying
+                    positive even after rejections. Thanks Tech For All
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="experience">
+            <div class="form-group">
+              <label for="exampleInputEmail1" >Your Name</label>
+              <input id="exp_name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+              <small id="emailHelp" class="form-text text-muted">We'll share your experience with us</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Add your experience</label>
+              <input type="text" class="form-control" id="exp" placeholder="Let us know about how you feel.">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div id="user_experiences" style="display: block;";></div>
+</body>
+</html>
